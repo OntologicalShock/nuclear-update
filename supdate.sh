@@ -9,7 +9,7 @@
 # Then it updates flatpak, homebrew, oh-my-posh, colorls, etc.
 # All the while it formats the output to stylistrically match the oh-my-posh theme nuclear-nord.omp.json
 
-# Create a variable that will specify where to /fold/ command outputs by passing the current terminal
+# Create a variable that will inform the /fold/ command later by passing the current terminal
 # columns to bc to calculate 80% width with no decimals.
 terminalWidth=$(echo "scale=0; $(tput cols) * 0.8 / 1" | bc)
 
