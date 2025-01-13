@@ -83,7 +83,7 @@ bash -c "\
 		&&
 	oh-my-posh upgrade |\
 		fold -s -w $terminalWidth |\
-		sed 's/^/\\x1b[${mainColorF}m│x1b[${ompColorF}m│  ∙ \x1b[0m/g'\
+		sed 's/^/\x1b[${mainColorF}m│x1b[${ompColorF}m│  ∙ \x1b[0m/g'\
 		&&
 	echo -e '\e[${mainColorF}m│\e[0m\e[${ompColorF}m│    \e[0m\n\e[${mainColorF}m│\e[0m\e[${ompColorF}m╰───\ue0b6\e[1;${white};${ompColorB}m\uf05d Oh-My-Posh Complete\e[0m\e[${ompColorF}m\ue0b4\e[0m'\
 		&&
